@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tabuada Estendida</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="./app.js" defer></script>
 </head>
 <body>
 
@@ -17,12 +18,12 @@
 
     <div class="campo">
       <label>Número</label>
-      <input type="number" placeholder="Ex: 7"/>
+      <input id="numero" type="number" placeholder="Ex: 7"/>
     </div>
 
-    <button>Gerar Tabuada</button>
+    <button onclick="handleClick()">Gerar Tabuada</button>
 
-    <div class="resultado">
+    <div id="resultado" class="resultado">
       <p class="resultado-titulo">Resultado</p>
       <div class="tabela-wrapper">
         <table>
@@ -35,7 +36,7 @@
               <th>Divisão</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody id="tabela">
             <tr>
               <td>1</td>
               <td>8</td>
